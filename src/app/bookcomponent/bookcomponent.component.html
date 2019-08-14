@@ -1,0 +1,8 @@
+<button (click)="buttonClick()" >Click to display data</button>
+<div *ngIf="display">
+<div *ngFor="let item of bookInfo">
+    <div>Book Author:{{ item.author }}</div>
+    <div>Country: {{ item.country }}</div>
+    <div>Category: {{ item.category }}</div><br><br>
+</div>
+</div>
